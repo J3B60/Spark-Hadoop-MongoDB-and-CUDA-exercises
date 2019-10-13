@@ -1,0 +1,15 @@
+Metrics important for the performance of a single PC
+
+Memory Speed
+GPU Speed
+CPU Speed
+Memory Size
+GPU Memory Size
+CPU cache size
+CPU Cores
+CPU Threads
+Bus speeds
+
+
+
+Note memory size is important, if it is too small then virtual memory would have to be used for example which is slower and impacts performance
