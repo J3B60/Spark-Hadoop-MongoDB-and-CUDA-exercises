@@ -9,5 +9,6 @@ Memory Speed
 GPU Speed
 Bus speed 
 
+Some Ideas of testing computer performance: Benchmark, running programs, stress testing
 
 ##Note: Quality and Quantative
