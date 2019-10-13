@@ -1,0 +1,22 @@
+# Special Characters and escaping
+One example is Control C or Z is used to stop something executing
+
+# Redirection
+redirect an output can be done using the >
+EG: ls > directory.txt #outputs the current directory into a txt file called directory.txt
+
+# Piping
+Pipe lining is achieved with |
+EG: gzip somehting | some other command I forget what I have used previously
+
+# Variables
+set a string equal to something and you can reference the variable using $variableName
+EG: example=1 #this is saved in $example
+
+# Arithmetic
+Arithmetic is mostly normal though some posix commands do become useful when using comparison opertations.
+
+# Common Commands
+ls -list files and folders in the current directory
+cd -change current directory (.. to return to parent directory)
+mkdir -make new directory
