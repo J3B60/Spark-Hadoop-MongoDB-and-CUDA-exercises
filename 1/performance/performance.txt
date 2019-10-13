@@ -1,9 +1,13 @@
 The definition of performance in computer science is the accuracy, efficiency and speed of the compter when executing instructions.
-Below is a list of characteristics that affect performance.
+Below is a list of some characteristics that affect performance.
 
-Processing Speed: instruction/sec
+Processing Speed: instruction/sec (CPU speed, cores, threads, instruction set)
 Response time
 Channel capacity
 Latency
+Memory Speed
+GPU Speed
+Bus speed 
+
 
 ##Note: Quality and Quantative
