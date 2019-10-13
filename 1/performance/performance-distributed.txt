@@ -1,3 +1,6 @@
 Num of sys
 network
 High availability (down time)
+ALL the stuff that affect Single PC usually
+Node connection speed to other nodes
+Number of Errors negatively impacts performance
