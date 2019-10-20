@@ -12,3 +12,7 @@ Map() = Data into key and value
 Reduce() = Collect key and values
 Filter/Match = Match key values ok a.id to b.id
 Output = Joined tbl1 and tbl2 via a.id and b.id (the full tables from input are actuall used, MapReduces only function is to match a.id to b.id (act as the glue))
+
+*Note chain map and reduce
+
+*Note map Phase can read in multiple files (though not used in these sqlMapReduce Tasks (I could have in Summation))
