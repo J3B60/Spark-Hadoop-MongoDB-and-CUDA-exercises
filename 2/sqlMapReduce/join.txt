@@ -15,4 +15,4 @@ Output = Joined tbl1 and tbl2 via a.id and b.id (the full tables from input are 
 
 *Note chain map and reduce
 
-*Note map Phase can read in multiple files (though not used in these sqlMapReduce Tasks (I could have in Summation))
+*Note map Phase can read in multiple files (though not used in these sqlMapReduce Tasks (I could have in Summation for less steps))
