@@ -1,0 +1,14 @@
+MapReduce job/steps for SQL:
+SELECT a.f1, b.f2 FROM "tbl1.csv" as a JOIN "tbl2.csv" as b ON a.id = b.id
+
+Lets Assume that tbl1 a.id is PK(Primary Key) and b.id is FK(Foriegn Key)
+
+Input1 = tbl1.csv
+Filter = focus only on a.id
+Map() = Data into key and value
+Input2 - tbl2.csv
+Filter = focus on b.id
+Map() = Data into key and value
+Reduce() = Collect key and values
+Filter/Match = Match key values ok a.id to b.id
+Output = Joined tbl1 and tbl2 via a.id and b.id (the full tables from input are actuall used, MapReduces only function is to match a.id to b.id (act as the glue))
