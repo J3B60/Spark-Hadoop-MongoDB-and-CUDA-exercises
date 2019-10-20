@@ -1,1 +1,9 @@
-Need to go over after seeing the examples from exercise 1
+MapReduce Jobs/Steps for SQL:
+SELECT fieldA FROM "input.csx" WHERE fieldA == something
+
+Input = input.csv
+Filter = we are only interested in fieldA, not the whole table
+Map() = each data has a key and value
+Reduce() = each key and value is combined into a collection
+Filter = now we are only interested in the data that match the specific key we want
+Output = list of fieldA == something
