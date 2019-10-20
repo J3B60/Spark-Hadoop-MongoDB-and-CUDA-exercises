@@ -1,0 +1,11 @@
+MapReduce Jobs
+
+1. input
+2. split
+3. Map()
+4. [combine]
+5. shuffle + sort
+6. Reduce()
+7. output
+
+https://www.mssqltips.com/sqlservertip/3222/big-data-basics--part-5--introduction-to-mapreduce/
