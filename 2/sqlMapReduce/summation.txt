@@ -1,0 +1,10 @@
+MapReduce job/steps for SQL:
+SELECT groupfield, sum(fieldA) as mysum FROM "input.csv" GROUP BY groupfield
+
+Input = input.csv
+Filter = only focus on the groupfield data
+Map() = get key and value for every data
+Reduce() = get collection of how many of same key value pairs appear
+Summation = can be done, if the data is a number type value then it can be the Number(key) * the value count(Number of appearences), If the data is of another form like sting then the count is good enough for a summation
+Filter = Group the data as required + add mysum coloumn title ready for output
+Output = Grouped data with summation
