@@ -8,6 +8,7 @@ Hadoop should have availability since its aim is to complete a task, it should h
 #Durability - Consistency
 Hadoop should be durable to recover from errors and have consistent data. This allows for operations to perform correctly and produce the correct output.
 
+
 ##Wishlist for distributed software
 High-availability~ Better communication between nodes allows for better usage of the data
 Fault-Tolerance~ Reduce the number of errors and therefore downtime sorting it out
@@ -18,7 +19,16 @@ Debuggable~ Find errors and system issues. The easier the code and system is to 
 Low resource demand~ running on lower resources allows for more efficent usage of system resources, less power consumption
 Cloud~ Accesses the system from anywhere, more economic, more usage and less idle
 
-##CAP Theorem and semantics of BASE (CAP: Consistency, Availability, Partition Tolerance[system operates dispite network failure])
+
+##CAP Theorem and semantics of BASE
+#CAP: Consistency, Availability, Partition Tolerance[system operates dispite network failure]
+These three are important to a distributed system as explained before but it is impossible to have all three of CAP at the same time.
+
+#BASE - Availability, Soft State[change in system over time due to inconsitencies], Consistency
+BASE is typical semanitcs for Big Data.
+
 
 #NOTES 
 *Also have: ACID model and POSIX I/O
+
+mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/
