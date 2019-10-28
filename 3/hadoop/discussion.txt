@@ -1,0 +1,24 @@
+##Semantical properties: Concurrency, Availablility, Durability
+#Concurrency - Atomic, Visible, Isolated
+Hadoop should be concurrent since the system is distributed there are times when conccurent writes to the same data will cause inconsistency in the data. This is important for Hadoop to get tasks done without incorrect data.
+
+#Availability - Robust, Scalable, Partition Tolerance
+Hadoop should have availability since its aim is to complete a task, it should have data ready for operations which is free from errors. It is important that the system is scalable since it is distributed system which has the ability of expanding or decreasing its capacity and to be able to be disrupted incase a node goes down unexpectadly.
+
+#Durability - Consistency
+Hadoop should be durable to recover from errors and have consistent data. This allows for operations to perform correctly and produce the correct output.
+
+##Wishlist for distributed software
+High-availability~ Better communication between nodes allows for better usage of the data
+Fault-Tolerance~ Reduce the number of errors and therefore downtime sorting it out
+Scalable~ all for the system to expand or shrink
+Extensible~ Easy to add new features and data so for hardware and software upgrades to system
+Usable~ increase system productivity
+Debuggable~ Find errors and system issues. The easier the code and system is to debug the quicker it can get back up and run
+Low resource demand~ running on lower resources allows for more efficent usage of system resources, less power consumption
+Cloud~ Accesses the system from anywhere, more economic, more usage and less idle
+
+##CAP Theorem and semantics of BASE (CAP: Consistency, Availability, Partition Tolerance[system operates dispite network failure])
+
+#NOTES 
+*Also have: ACID model and POSIX I/O
