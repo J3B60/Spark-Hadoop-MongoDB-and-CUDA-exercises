@@ -1,0 +1,53 @@
+s1 = 10.0.0.1
+s2 = 10.0.0.40
+s3 = 10.0.0.80
+
+M = 101
+f(ip) = ip mod 101
+g(ip) = ((ip+50)*150) mod 101
+
+#Replicate s1 f(ip)
+1 mod 101 = 1
+
+#Replicate s2 f(ip)
+40 mod 101 = 40
+
+#Replicate s3 f(ip)
+80 mod 101 = 80
+
+#Replicate s1 g(ip)
+((1+50)*150) mod 101 = 75
+
+#Replicate s2 g(ip)
+((40+50)*150) mod 101 = 67
+
+#Replicate s3 g(ip)
+((80+50)*150) mod 101 = 7
+
+#Summary:
+s1 = [1,75]
+s2 = [40,67]
+s3 = [80, 7]
+key(d) is repliacted by f(d) and g(d)
+
+Step 1 - s1 is started
+RING = [s1(1), s1(75)]
+
+Step 2 - s2 is started
+RING = [s1(1), s2(40), s2(67), s1(75)]
+
+Step 3 - data item (d = 10) is added
+f(10) = 10 mod 101 = 10
+g(10) = ((10+50)*150) mod 101 = 11
+key(d) = [10,11]
+[10] and [11] go to next node s2(40)
+s2() = [10,11]
+
+Step 4 - data item (d = 30) is added
+f(30) = 30 mod 101 = 30
+g(30) = ((30+50)*150) mod 101 = 82
+key(d) = [30, 82]
+[30] goes to next node s2(40)
+[82] goes to next node s1(1)
+s1() = [82]
+s2() = [10,11,30]
