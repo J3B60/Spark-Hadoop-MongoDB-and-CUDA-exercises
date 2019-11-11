@@ -56,11 +56,35 @@ Step 5 - data item (d = 70) is added
 f(70) = 70 mod 101 = 70
 g(70) = ((70+50)*150) mod 101 = 22
 key(d) = [70, 22]
-[70] goes to next node s1(75)
+[70] goes to next node s1(70)
 [22] goes to next node s2(40)
-s1() = [82,75]
+s1() = [82,70]
 s2() = [10,11,30,22]
 
 Step 6 - s3 is started
-RING = [s3(80), s3(7)]
+RING = [s1(1), s3(7), s2(40), s2(67), s1(75), s3(80)]
 No Load Balancing required
+
+Step 7 - data item (d = 20) is added
+f(20) = 20 mod 101 = 20
+g(20) = ((20+50)*150) mod 101 = 97
+key(d) = [20,97]
+[20] goes to next node s2(40)
+[97] goes to next node s1(1)
+
+Step 8 - data item (d = 80) is added
+f(80) = 80 mod 101 = 80
+g(80) = ((80+50)*150) mod 101 = 7
+key(d) = [80, 7]
+[80] goes to next node s3(80)
+[7] goes to next node s3(7)
+
+Step 9 - Server s2 Fails
+RING = [s1(1), s3(7), s1(75), s3(80)]
+Load Balancing Required
+[82,97] go to s1(1)
+[10,11,20,22,30,70] go to s1(75)
+s1() = [82,97,10,11,20,22,30,70]
+[80] goes to s3(80)
+[7] goes to s3(7)
+s3() = [80,7]
