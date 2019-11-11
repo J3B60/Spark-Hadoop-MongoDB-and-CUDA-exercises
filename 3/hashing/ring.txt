@@ -61,3 +61,6 @@ key(d) = [70, 22]
 s1() = [82,75]
 s2() = [10,11,30,22]
 
+Step 6 - s3 is started
+RING = [s3(80), s3(7)]
+No Load Balancing required
