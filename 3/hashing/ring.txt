@@ -88,3 +88,5 @@ s1() = [82,97,10,11,20,22,30,70]
 [80] goes to s3(80)
 [7] goes to s3(7)
 s3() = [80,7]
+
+*NOTE Green REQUEST 75 in ring-5 and ring-6 images is wrong, should be REQUEST 70
