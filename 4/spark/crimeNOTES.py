@@ -21,3 +21,5 @@ CSVRDD.sortByKey(True, 1) #default Ascending(Pass True or for descending False) 
 CSVRDD.mapPartitionWithIndex(#Function)
 CSVRDD.subtract()#Subract one RDD from another
 CSVRDD.cartesian()#Cartesian product of two RDD(mapping one RDD to another)
+
+#I have attempted the task and have been unsuccessful at grouping the columns of crimedesc. I think I should 'clean' the data a bit better. I have been getting the seperate entries of data but I think I should have just 'cleaned' it to have the crimedesc columns alone and then loading it into an RDD. this way I can do map and reduce to get the count I need of crimedescs. I wish it was clearer with what is meant by 'cleaning' because it took a while to figure out :( It would at least be nice to have an example python file to run since it also took a while and I was unable to load pyspark into py so I had to write everything directly into the pyspark console rather than having a py file.
