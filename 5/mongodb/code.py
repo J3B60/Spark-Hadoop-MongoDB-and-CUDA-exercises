@@ -1,0 +1,2 @@
+#Couldn't get mongodb installed on Ubuntu. Various errors from sudo apt-get for core, server packages. Errors occur in the from the installation packages and not my terminal code.
+#I have watched through setting up MongoDB on Windows and Ubuntu. I will add some lines that would help to get this task done and explain how I would go about it.
