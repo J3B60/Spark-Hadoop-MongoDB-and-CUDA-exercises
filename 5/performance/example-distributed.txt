@@ -1,0 +1,10 @@
+https://aws.amazon.com/blogs/compute/real-world-aws-scalability/
+
+Amazon Cloud Services.
+
+This is a blog by Amazon explaining scaability.
+It has an example of their cloud services doing some tasks and shown them in a graph.
+
+It shows the immprovements Strong scaling has on a 16M Cell STARCCM+ CFD Calculation compared to linear Scaling (Linear Scaling being Weak Scaling).
+This example was run on Amazon EC2 c3.8xlarge instances, each an Intel E5-2680, providing either 16 cores or 32 Hyper-Threading processors using Intel Hyper-Threading Technology (HTT).
+The improvements don't seem to be as dramatic as the HPC. This is because of network overhead between machines. The Strong Scaling improvments are seen with much higher number of tasks.
