@@ -1,0 +1,6 @@
+{
+    title: "Wikipedia",
+    text: "##Stuff from wikipedia page",
+    category: ["Organisation','Website"],
+    links: ["##Stuff from the references section on Wikipedia"]
+}
