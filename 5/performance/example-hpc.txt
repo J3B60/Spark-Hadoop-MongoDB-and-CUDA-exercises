@@ -1,0 +1,7 @@
+https://www.kth.se/blogs/pdc/2018/11/scalability-strong-and-weak-scaling/
+
+HPC Scaling Comparison on a Julia Set Image
+
+So this source has a table and graph of the results.
+
+It shows Strong scaling is better than Weak scaling. Weak scaling is consistently near the 4 second mark whilst Strong is at the 1 second. However there are incosistancies in the results. There are large variations, there are dips and increases in the times. This could be caused by the parallel overhead or simpley by the number of processors in the system. For example 12 treads is slower than 16 threads for the Weak Scaling table. The Strong table is consistently decreading in time. However the Speedup graphs are consitent with Amdahl's law and Gustafson's Law.
