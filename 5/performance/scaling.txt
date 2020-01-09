@@ -1,0 +1,26 @@
+ Strong Scaling: Harder to achieve in programming. The problem size stays fixed but the number of processors increase therefore reducing the amount of run time.
+ 
+ Weak Scaling: As the processors increase, the task size increase. (This is Linear scaling, as the processors and task increase the time take for each parallel task should stay the same (ignoring parallel overhead) but of course since there are more tasks, more time will be taken to complete all tasks.)
+ 
+ Strong Scaling is better.
+ 
+ Need to worrr about Parrallel Overhead.
+ 
+ There are equations for Strong and Weak Scaling found here:
+ https://www.archer.ac.uk/training/course-material/2016/12/mpi_scaling_manc/Slides/Scaling.pdf
+ 
+ and here:
+ https://www.sharcnet.ca/help/index.php/Measuring_Parallel_Scaling_Performance
+ 
+ Strong Scaling follows Admhal's Law.
+ Weak Scaling is Gustafon's Law.
+ 
+ Though the second source sums up the parallel bit nicely.
+ 
+ This is assuming the code is all parallel
+ Strong Scaling Law: t1 / ( N * tN ) * 100%
+ Weak Scaling Law: ( t1 / tN ) * 100%
+ t1 = basically 1 (processing element, basically the decimal percent of how much code is paralel, this is alpha 'a' in the 1st source, The 1st source basically mixes Serial and Parallel together)
+ N = Number of tasks
+ tN the Number of processors
+ *100% to get percentage
